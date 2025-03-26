@@ -18,3 +18,16 @@ A dataset named `kanjidic_dataset` can be created with:
 ```
 python data_processor.py
 ```
+
+Once the `kanjidic_dataset` folder is created, please upload it under the cloned `diffusers` directory:
+
+```
+diffusers/kanjidic_dataset/images/metadata.csv
+diffusers/kanjidic_dataset/images/04e9c.png
+diffusers/kanjidic_dataset/images/05516.png
+...
+```
+
+## Cutstom training script
+Finally, replace the original `train_text_to_image.py` under `diffusers/examples/text_to_image` directory with the one in this repository.
+Training should start using the scripts provided in the Colab notebook.
